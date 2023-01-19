@@ -1,5 +1,11 @@
 'use strict';
 
+// This line must come before importing the logger.
+// This line is Datadog's automatic log injection for nodeJS
+const tracer = require('dd-trace').init({
+    logInjection: true
+});
+
 const bunyan = require('bunyan');
 const log = bunyan.createLogger({
 	name: "myapp",
