@@ -4,7 +4,7 @@ metadata:
   name: nodejs
   labels:
     tags.datadoghq.com/env: "prod"
-    tags.datadoghq.com/service: "my_nodejs_app"
+    tags.datadoghq.com/service: "kfoo_nodejs"
     tags.datadoghq.com/version: "1.0"
 spec:
   replicas: 2
@@ -14,12 +14,12 @@ spec:
   template:
     metadata:       
       annotations:
-        ad.datadoghq.com/tags: '{"service: "my_nodejs_app"}'
+        ad.datadoghq.com/tags: '{"kenneth": "foo"}'
         admission.datadoghq.com/js-lib.version: "latest"    
       labels:
         app: nodejs
         tags.datadoghq.com/env: "prod"
-        tags.datadoghq.com/service: "my_nodejs_app"
+        tags.datadoghq.com/service: "kfoo_nodejs"
         tags.datadoghq.com/version: "1.0"
         admission.datadoghq.com/enabled: "true" 
     spec:
