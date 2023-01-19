@@ -11,8 +11,11 @@ $ kubectl apply -f deployment/
 
 
 $ kubectl exec -it <app pod> -- curl localhost:8080/hello
+ 
 $ kubectl exec -it <app pod> -- curl localhost:8080/hi
+ 
 $ kubectl exec -it <app pod> -- curl localhost:8080/error
+ 
 $ kubectl exec -it <app pod> -- curl localhost:8080/warn
 
 e.g. kubectl exec -it nodejs-598d4f59c5-kfxnj -- curl localhost:8080/hello
