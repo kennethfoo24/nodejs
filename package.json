@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bunyan": "^1.8.14",
+    "express": "^4.17.1"
+  }
+}
